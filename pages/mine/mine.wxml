@@ -21,7 +21,7 @@
     <block wx:for="{{menuitem}}" wx:key="">
       <view class='downMenu-itemback' bindtap='itemClick'>
         <view class='downMenu-item' >{{item}}</view>
-        <text class='downMenu-itemarrow'>-></text>
+        <text class='downMenu-itemarrow'> > </text>
       </view>
     </block>
   </view>
