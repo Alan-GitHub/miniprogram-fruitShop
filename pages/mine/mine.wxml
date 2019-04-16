@@ -1,2 +1,28 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class='container'>
+  <view class='upHeader'> 
+    <view class='userinfo-back'>
+      <block wx:if="{{!hasUserInfo && canIUse}}">
+        <image class='userinfo-headicon' src='../../images/Apple.jpg'></image>
+        <view class='userinfo-usernameback'>
+          <button class='userinfo-loginbtn' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+        </view>
+      </block>
+      <block wx:else>
+        <image class='userinfo-headicon' src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view class='userinfo-usernameback'>          
+          <text class='userinfo-username'>{{userInfo.nickName}}</text> 
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class='downMenu'>
+    <block wx:for="{{menuitem}}" wx:key="">
+      <view class='downMenu-itemback' bindtap='itemClick'>
+        <view class='downMenu-item' >{{item}}</view>
+        <text class='downMenu-itemarrow'>-></text>
+      </view>
+    </block>
+  </view>
+</view>
