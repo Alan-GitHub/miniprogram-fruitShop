@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="menu-container"> 
+    <scroll-view class='menu-scroll-view'>
+      <view wx:for="{{fruitsData}}" wx:key="" class="menu-scroll-view-item {{curSelTypeName===index?'active':''}}" bindtap='clickMenu' data-index='{{index}}'> {{item.typeName}} </view>
+    </scroll-view>
+  </view>
+
+  <view class="content-container">
+    <scroll-view scroll-y="{{true}}" class="content-scroll-view">
+      <block wx:for="{{fruitsData[curSelTypeName].list}}" wx:key="">
+        <view class='content-item'> 
+          <image class='content-item-image' src='../../images/Apple.jpg'></image>
+          <view class='content-item-descinfo'>{{item.descinfo}}</view>
+          <view class='content-item-addNumbers'>
+            <text class='content-item-addNumbers-text' bindtap='reduceNumber' data-index="{{index}}"> - </text>
+            <input class='content-item-addNumbers-input' type='number' value='{{item.buyNumbers}}'>  </input>
+            <text class='content-item-addNumbers-text' bindtap='addNumber' data-index="{{index}}"> + </text>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
