@@ -48,11 +48,14 @@ Page({
 
   getUserInfo: function (e) {
     console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+    var info = e.detail.userInfo
+    app.globalData.userInfo = typeof(info) != "undefined" ? info : {}
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
+      userInfo: typeof(info) != "undefined" ? info : {} ,
+      hasUserInfo: this.isEmptyObject(info) ? false : true
     })
+
+    console.log(this.data)
   },
 
   itemClick: function() {
@@ -60,5 +63,14 @@ Page({
       title: '温馨提示',
       content: '此功能尚未开发,敬请期待...',
     })
+  },
+
+  isEmptyObject: function(obj) {
+    for(var index in obj)
+    {
+      return false
+    }
+
+    return true
   }
 })
