@@ -11,7 +11,7 @@ Page({
     userInfo: {},
     hasUserInfo:false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    menuitem: ["消费明细", "积分明细", "积分兑换"]
+    mine_menuitem: ["消费明细", "积分明细", "积分兑换"]
   },
 
   /**

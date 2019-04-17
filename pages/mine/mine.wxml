@@ -18,7 +18,7 @@
   </view>
 
   <view class='downMenu'>
-    <block wx:for="{{menuitem}}" wx:key="">
+    <block wx:for="{{mine_menuitem}}" wx:key="">
       <view class='downMenu-itemback' bindtap='itemClick'>
         <view class='downMenu-item' >{{item}}</view>
         <text class='downMenu-itemarrow'> > </text>
