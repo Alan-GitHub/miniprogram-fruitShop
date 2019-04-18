@@ -6,247 +6,22 @@ Page({
   data: {
     curSelTypeName:0,
 
-    //数组形式，每个元素都包含了一个类别的所有水果
-    fruitsData:[
-      {
-        //水果类别
-        typeName: "活动",
-        //包含的具体水果
-        list:[
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "活动-苹果1",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "活动-苹果2",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "活动-苹果3",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "活动-苹果4",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "活动-苹果5",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "活动-苹果6",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "活动-苹果7", 
-            buyNumbers: 0,
-          }
-        ]
-      },
-      {
-        typeName: "热卖水果",
-        list: [
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "热卖水果-苹果1",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "热卖水果-苹果2",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "热卖水果-苹果3",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "热卖水果-苹果4",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "热卖水果-苹果5", 
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "热卖水果-苹果6",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "热卖水果-苹果7",
-            buyNumbers: 0,
-          }
-        ]
-      },
-      {
-        typeName: "招牌水果",
-        list: [
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "招牌水果-苹果1",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "招牌水果-苹果2",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "招牌水果-苹果3",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "招牌水果-苹果4",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "招牌水果-苹果5",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "招牌水果-苹果6",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "招牌水果-苹果7",
-            buyNumbers: 0,
-          }
-        ]
-      },
-      {
-        typeName: "舌尖碰撞",
-        list: [
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "舌尖碰撞-苹果1",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "舌尖碰撞-苹果2",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "舌尖碰撞-苹果3",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "舌尖碰撞-苹果4",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "舌尖碰撞-苹果5",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "舌尖碰撞-苹果6",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "舌尖碰撞-苹果7",
-            buyNumbers: 0,
-          }
-        ]
-      },
-      {
-        typeName: "鲜切水果单拼",
-        list: [
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "鲜切水果单拼-苹果1",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "鲜切水果单拼-苹果2",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "鲜切水果单拼-苹果3",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "鲜切水果单拼-苹果4",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "鲜切水果单拼-苹果5",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "鲜切水果单拼-苹果6",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "鲜切水果单拼-苹果7",
-            buyNumbers: 0,
-          }
-        ]
-      },
+    //对象数组形式，每个元素都包含了一个类别的所有水果,从后台拉取数据
+    /*
+    格式：
+    fruitsData: [
       {
         typeName: "进口水果",
         list: [
           {
-            image: "../../images/Apple.jpg",
+            image: "cloud://alan-test-eef1c6.616c-alan-test-eef1c6/indexpage/activity/Apple.jpg",
             descinfo: "进口水果-苹果1",
-            buyNumbers: 0,
+            buyNumbers: 0
           },
           {
-            image: "../../images/Apple.jpg",
-            descinfo: "进口水果-苹果2",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "进口水果-苹果3",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "进口水果-苹果4",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "进口水果-苹果5",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "进口水果-苹果6",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
+            image: "cloud://alan-test-eef1c6.616c-alan-test-eef1c6/indexpage/activity/Apple.jpg",
             descinfo: "进口水果-苹果7",
-            buyNumbers: 0,
+            buyNumbers: 0
           }
         ]
       },
@@ -254,48 +29,36 @@ Page({
         typeName: "自由组合混搭",
         list: [
           {
-            image: "../../images/Apple.jpg",
+            image: "cloud://alan-test-eef1c6.616c-alan-test-eef1c6/indexpage/activity/Apple.jpg",
             descinfo: "自由组合混搭-苹果1",
-            buyNumbers: 0,
+            buyNumbers: 0
           },
           {
-            image: "../../images/Apple.jpg",
-            descinfo: "自由组合混搭-苹果2",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "自由组合混搭-苹果3",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "自由组合混搭-苹果4",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "自由组合混搭-苹果5",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
-            descinfo: "自由组合混搭-苹果6",
-            buyNumbers: 0,
-          },
-          {
-            image: "../../images/Apple.jpg",
+            image: "cloud://alan-test-eef1c6.616c-alan-test-eef1c6/indexpage/activity/Apple.jpg",
             descinfo: "自由组合混搭-苹果7",
-            buyNumbers: 0,
+            buyNumbers: 0
           }
         ]
       }
-
     ]
+     */
+    fruitsData:[]
   },
 
   onLoad: function () {
+    var db = wx.cloud.database({
+      env: 'alan-test-eef1c6'  //必须是环境id
+    })
 
+    db.collection("index_colle").field({
+      typeName: true,
+      list: true
+    }).get().then(res => {
+        this.setData({
+          fruitsData: res.data
+        })
+      }
+    )
   },
 
   clickMenu: function(e) {
