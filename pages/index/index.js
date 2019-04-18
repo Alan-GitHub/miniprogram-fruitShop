@@ -14,30 +14,37 @@ Page({
         //包含的具体水果
         list:[
           {
+            image: "../../images/Apple.jpg",
             descinfo: "活动-苹果1",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "活动-苹果2",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "活动-苹果3",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "活动-苹果4",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "活动-苹果5",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "活动-苹果6",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "活动-苹果7", 
             buyNumbers: 0,
           }
@@ -47,30 +54,37 @@ Page({
         typeName: "热卖水果",
         list: [
           {
+            image: "../../images/Apple.jpg",
             descinfo: "热卖水果-苹果1",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "热卖水果-苹果2",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "热卖水果-苹果3",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "热卖水果-苹果4",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "热卖水果-苹果5", 
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "热卖水果-苹果6",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "热卖水果-苹果7",
             buyNumbers: 0,
           }
@@ -80,30 +94,37 @@ Page({
         typeName: "招牌水果",
         list: [
           {
+            image: "../../images/Apple.jpg",
             descinfo: "招牌水果-苹果1",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "招牌水果-苹果2",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "招牌水果-苹果3",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "招牌水果-苹果4",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "招牌水果-苹果5",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "招牌水果-苹果6",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "招牌水果-苹果7",
             buyNumbers: 0,
           }
@@ -113,30 +134,37 @@ Page({
         typeName: "舌尖碰撞",
         list: [
           {
+            image: "../../images/Apple.jpg",
             descinfo: "舌尖碰撞-苹果1",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "舌尖碰撞-苹果2",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "舌尖碰撞-苹果3",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "舌尖碰撞-苹果4",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "舌尖碰撞-苹果5",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "舌尖碰撞-苹果6",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "舌尖碰撞-苹果7",
             buyNumbers: 0,
           }
@@ -146,30 +174,37 @@ Page({
         typeName: "鲜切水果单拼",
         list: [
           {
+            image: "../../images/Apple.jpg",
             descinfo: "鲜切水果单拼-苹果1",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "鲜切水果单拼-苹果2",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "鲜切水果单拼-苹果3",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "鲜切水果单拼-苹果4",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "鲜切水果单拼-苹果5",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "鲜切水果单拼-苹果6",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "鲜切水果单拼-苹果7",
             buyNumbers: 0,
           }
@@ -179,30 +214,37 @@ Page({
         typeName: "进口水果",
         list: [
           {
+            image: "../../images/Apple.jpg",
             descinfo: "进口水果-苹果1",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "进口水果-苹果2",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "进口水果-苹果3",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "进口水果-苹果4",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "进口水果-苹果5",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "进口水果-苹果6",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "进口水果-苹果7",
             buyNumbers: 0,
           }
@@ -212,30 +254,37 @@ Page({
         typeName: "自由组合混搭",
         list: [
           {
+            image: "../../images/Apple.jpg",
             descinfo: "自由组合混搭-苹果1",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "自由组合混搭-苹果2",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "自由组合混搭-苹果3",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "自由组合混搭-苹果4",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "自由组合混搭-苹果5",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "自由组合混搭-苹果6",
             buyNumbers: 0,
           },
           {
+            image: "../../images/Apple.jpg",
             descinfo: "自由组合混搭-苹果7",
             buyNumbers: 0,
           }

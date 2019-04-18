@@ -10,7 +10,7 @@
     <scroll-view scroll-y="{{true}}" class="content-scroll-view">
       <block wx:for="{{fruitsData[curSelTypeName].list}}" wx:key="">
         <view class='content-item'> 
-          <image class='content-item-image' src='../../images/Apple.jpg'></image>
+          <image class='content-item-image' src='{{item.image}}'></image>
           <view class='content-item-descinfo'>{{item.descinfo}}</view>
           <view class='content-item-addNumbers'>
             <text class='content-item-addNumbers-text' bindtap='reduceNumber' data-index="{{index}}"> - </text>
