@@ -3,7 +3,7 @@
   <view class='upHeader'> 
     <view class='userinfo-back'>
       <block wx:if="{{!hasUserInfo && canIUse}}">
-        <image class='userinfo-headicon' src='../../images/Apple.jpg'></image>
+        <image class='userinfo-headicon' src='{{headicon}}'></image>
         <view class='userinfo-usernameback'>
           <button class='userinfo-loginbtn' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
         </view>

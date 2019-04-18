@@ -10,6 +10,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    headicon:"../../images/unlogin_headicon.png",
     userInfo: {},
     hasUserInfo:false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
